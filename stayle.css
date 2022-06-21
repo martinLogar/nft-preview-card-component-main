@@ -1,0 +1,119 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+
+:root{
+    /*----- color ----*/
+    /*----- primary ---*/
+    --primary-soft-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    /*---- neutral ----*/
+    --dark-main-blue: hsl(217, 54%, 11%);   /*(main BG)*/
+    --dark-card-blue: hsl(216, 50%, 16%);  /*(card BG)*/
+    --dark-line-blue: hsl(214, 23%, 53%);     /*(line)*/
+    --white: hsl(0, 0%, 100%);
+
+
+    /*---- font ----*/
+
+    --fw-slim: 300;
+    --fw-medium: 400;
+    --fw-bolean: 600;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--dark-main-blue);
+    /*font-size: 21px;          */
+   
+}
+
+h1{
+    color: var(--white);
+    font-weight: var(--fw-bolean);
+    margin:0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+}
+
+p{
+    color: var(--dark-line-blue);
+    font-size: 18px;
+    font-weight: var(--fw-slim);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+   
+}
+
+.value-eth{
+    color: var(--primary-cyan);
+  
+}
+.time-left{
+    color: var(--dark-line-blue);
+}
+
+
+.container{ 
+      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    
+  
+}
+
+.card{
+    max-width:350px;
+    background-color: var(--dark-card-blue);
+    border-radius: 0.75rem;
+}
+
+.image-equilibrium{
+    border-radius: 0.55rem;
+    margin: 1rem;
+    max-width: 90%;
+    justify-items: center;
+   
+    
+ 
+    
+}
+
+.card-info{
+    width:100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   border: 2px solid red;
+   margin: 1rem;
+   padding-right: 1rem;
+  
+   }
+
+.card-info-item{
+    display: flex;
+    flex-flow: row nowrap;    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+hr{
+    border: 1px solid var(--dark-line-blue);
+    width:90%;
+}
+
+.avatar{
+    width: 2rem;
+   /* border: 2px solid var(--white);
+    border-radius: 50% ; */
+    padding-left: 1rem ;
+    padding-top:0.6rem;
+    padding-bottom: 2rem;
+}
+

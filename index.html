@@ -3,59 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="stayle.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-  <div class="container">
-
+<div class="container">
+  <div>
     <div class="card">
 
-        <img class="image-equilibrium" src="images/image-equilibrium.jpg" alt="Nft photo">
-        
-        <h1>Equilibrium #3429</h1>
+      <img class="image-equilibrium" src="images/image-equilibrium.jpg" alt="Nft photo">
 
-        <p>Our Equilibrium collection promotes balance and calm</p>
-          <section class="parent">
-          <div class="card-info">
-            <div  class="card-info-item" >
-            <img  src="images/icon-ethereum.svg" alt="photo icon ethereum">
-            
+      <h1>Equilibrium #3429</h1>
 
-             <span class="value-eth">0.041 ETH</span>
-            </div>
+      <p>Our Equilibrium collection promotes balance and calm</p>
 
-            <div class="card-info-item" >
-            <img src="images/icon-clock.svg" alt="icon clock"> 
-            
-             <span class="time-left">3 days left</span>
-            </div>
-          </div>
-
-          </section>
-
-        <hr> 
-
-        <div class="card-info">
-          <div class="card-info-item">
-            <img  class="avatar" src="images/image-avatar.png" alt="avatar">
-          
-            <span > 
-              Creation of Jules Wyvern</span>
+      <div class="card-info">
+        <div class="card-info-item">
+          <img src="images/icon-ethereum.svg"alt="photo icon ethereum">
+          <span class="value-eth">0.041 ETH</span>
         </div>
+
+        <div class="card-info-item">
+          <img src="images/icon-clock.svg" alt="icon clock">
+          <span class="time-left">3 days left</span>
+        </div>
+      </div>
+
+      <div class="author">
+          <img src="images/image-avatar.png" alt="avatar">
+          <span>Creation of Jules Wyvern</span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Martin Logar</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Martin Logar</a>.
+    </div>
   </div>
 </body>
 </html>

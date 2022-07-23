@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /*----- color ----*/
+    /*----- primary ---*/
+    --primary-soft-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    /*---- neutral ----*/
+    --dark-main-blue: hsl(217, 54%, 11%); /*(main BG)*/
+    --dark-card-blue: hsl(216, 50%, 16%); /*(card BG)*/
+    --dark-line-blue: hsl(214, 23%, 53%); /*(line)*/
+    --dark-line-blue-opacity-80: hsla(214, 23%, 53%, .4); /*(line with opacity)*/
+    --white: hsl(0, 0%, 100%);
+
+    /*---- font ----*/
+    --fw-slim: 200;
+    --fw-medium: 400;
+    --fw-bolean: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-main-blue);
+    /*font-size: 21px;          */
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center; /* center items horizontally, in this case */
+    height: 100vh; /* 100 of window height */
+}
+
+.card {
+    max-width: 350px;
+    background-color: var(--dark-card-blue);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: var(--fw-bolean);
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+p {
+    color: var(--dark-line-blue);
+    font-size: 1rem;
+    font-weight: var(--fw-slim);
+    padding-bottom: 1.5rem;
+}
+
+.image-equilibrium {
+    border-radius: 0.55rem;
+    max-width: 100%;
+    justify-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--dark-line-blue-opacity-80);
+}
+
+.card-info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-eth {
+    margin-left: .5rem;
+    color: var(--primary-cyan);
+}
+
+.time-left {
+    margin-left: .5rem;
+    color: var(--dark-line-blue);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author span {
+    display: inline-block;
+    margin-left: 1rem;
+    color: var(--dark-line-blue);
+    font-size: .9rem;
+    font-weight: var(--fw-slim);
+}
+
+.author img {
+    width: 2rem;
+}
+
+.attribution {
+    font-size: .7rem;
+    text-align: center;
+    font-weight: var(--fw-slim);
+    margin-top: .5rem;
+    color: var(--dark-line-blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
